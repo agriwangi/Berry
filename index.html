@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1D4B4B">
+  <title>PT. AGRI WANGI BERRY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link id="font-dasar" href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <noscript><p style="padding:24px;font-family:sans-serif">Situs ini membutuhkan JavaScript. Aktifkan JavaScript di peramban Anda.</p></noscript>
+
+  <!-- ========== TAMPILAN PUBLIK ========== -->
+  <div id="v-publik" class="tema" hidden>
+    <header class="nav" id="nav">
+      <div class="wadah">
+        <a class="merek" id="merek" href="#/" aria-label="Beranda"></a>
+        <ul class="menu-atas" id="menu-atas"></ul>
+        <div class="nav-kanan">
+          <span id="tombol-nav"></span>
+          <a class="ikon-btn" href="#/keranjang" id="btn-keranjang" aria-label="Keranjang belanja"><span id="ik-keranjang"></span><span class="lencana-angka" id="lenc-keranjang" hidden>0</span></a>
+          <button class="ikon-btn hamburger" id="btn-hamburger" aria-label="Buka menu"><span id="ik-hamburger"></span></button>
+        </div>
+      </div>
+    </header>
+    <div class="laci" id="laci" role="dialog" aria-label="Menu">
+      <button class="ikon-btn tutup" id="btn-tutup-laci" aria-label="Tutup menu"><span id="ik-tutup-laci"></span></button>
+      <nav id="laci-isi"></nav>
+    </div>
+    <main class="halaman-isi" id="halaman" tabindex="-1"></main>
+    <footer class="footer" id="footer"></footer>
+    <div id="mini-keranjang-root"></div>
+    <button class="naik" id="btn-naik" aria-label="Kembali ke atas"><span id="ik-naik"></span></button>
+  </div>
+
+  <!-- ========== LOGIN TIM ========== -->
+  <div id="v-login" class="layar-login" hidden></div>
+
+  <!-- ========== PANEL ADMIN ========== -->
+  <div id="v-admin" class="adm" hidden>
+    <div class="shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="logo"><span id="logo-admin"></span></div>
+        <nav id="nav-admin" aria-label="Menu admin"></nav>
+      </aside>
+      <div class="utama-wadah">
+        <div class="topbar" id="topbar"></div>
+        <main class="konten" id="admin-isi" tabindex="-1"></main>
+      </div>
+    </div>
+    <div id="bg-mobile" class="bg-mobile" hidden></div>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast-root" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
