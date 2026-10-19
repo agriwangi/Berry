@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://asepmusthopa-max.github.io/agri-wangi-berry-web/sitemap.xml
+Sitemap: https://agriwangi.github.io/Berry/sitemap.xml
